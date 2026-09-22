@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact | The Web Notebook</title>
+  </head>
+
+  <body>
+    <main class="contact-card">
+      <header>
+        <p class="tagline">LET’S TALK</p>
+        <h1>Get in touch</h1>
+        <p>
+          Have a question, a topic suggestion, or feedback? Share your thoughts
+          below.
+        </p>
+      </header>
+
+      <form>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="first-name">First name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              autocomplete="given-name"
+              placeholder="Your first name"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="last-name">Last name (optional)</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              autocomplete="family-name"
+              placeholder="Your last name"
+            />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            placeholder="name@example.com"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="reason">Reason For Contact</label>
+          <select id="reason" name="reason">
+            <option value="" disabled selected>Choose a reason</option>
+            <option value="question">Question</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="What would you like to share?"
+          ></textarea>
+        </div>
+
+        <button type="submit">Send message →</button>
+      </form>
+    </main>
+  </body>
+</html>
