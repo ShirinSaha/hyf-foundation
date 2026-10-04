@@ -1,4 +1,4 @@
-const randomColorButton = document.querySelector("#random-color-button");
+const randomColorButton = document.getElementById("random-color-button");
 
 randomColorButton.addEventListener("click", changeBackgroundColor);
 
