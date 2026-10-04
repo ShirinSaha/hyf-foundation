@@ -30,9 +30,9 @@ p {
 	margin-top: 0;
 }
 
-h1 {
+.header__title {
 	margin-bottom: 0;
-	font-size: 32px;
+	font-size: 2rem;
 }
 
 nav {
@@ -53,26 +53,25 @@ main {
 }
 
 section {
-	min-width: 0;
 	padding: 20px;
 	border: 1px solid #d4ddd4;
 	border-radius: 8px;
 	background-color: rgb(255 255 255 / 75%);
 }
 
-section h2 {
+.section__title {
 	margin-bottom: 8px;
 }
 
-#about h2 {
+.about__title {
 	text-align: center;
 }
 
 button {
 	max-width: 100%;
-	padding: 10.4px 16px;
+	padding: 10px 16px;
 	border: 0;
-	border-radius: 5.6px;
+	border-radius: 6px;
 	background-color: #176b55;
 	color: white;
 	font: inherit;
@@ -89,7 +88,7 @@ footer {
 	padding-block: 16px;
 }
 
-footer p {
+.footer__text {
 	margin-bottom: 0;
 }
 
