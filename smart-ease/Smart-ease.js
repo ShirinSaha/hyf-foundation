@@ -3,61 +3,62 @@ const yearOfBirth = 1988;
 const yearFuture = 2027;
 const age = yearFuture - yearOfBirth;
 
-console.log("You will be " + age + " years old in " + yearFuture);
+console.log(`You will be ${age} years old in ${yearFuture}`);
 
 
 //Goodboy-Oldboy (A dog age calculator)
 const dogYearOfBirth = 2017;
 const dogYearFuture = 2027;
-const dogYear = (dogYearFuture - dogYearOfBirth) * 7;
-console.log(dogYear);
+const dogAge = dogYearFuture - dogYearOfBirth
+const dogHumanAge = (dogYearFuture - dogYearOfBirth) * 7;
+console.log(dogAge);
 
 const shouldShowResultInDogYears = true;
 
 if (shouldShowResultInDogYears) {
-  console.log(`Your dog will be ${dogYear} human years old in ${dogYearFuture}`);
+  console.log(`Your dog will be ${dogHumanAge} human years old in ${dogYearFuture}`);
 } else {
-  console.log(`Your dog will be ${age} dog years old in ${dogYearFuture}`);
+  console.log(`Your dog will be ${dogAge} dog years old in ${dogYearFuture}`);
 }
 
 //Housey pricey (A house price estimator)
 
 
 //PricePeter
-const widthPeter = 8;
-const depthPeter = 10;
-const heightPeter = 10;
-const gardenPeter = 100;
-const pricePeter = 2500000;
+const peterHouseWidth = 8;
+const peterHouseDepth = 10;
+const peterHouseHeight  = 10;
+const peterGardenSizeInM2 = 100;
+const peterHouseCosts  = 2500000;
 
-const volumePeter = widthPeter * depthPeter * heightPeter;
+const peterHouseVolume = peterHouseWidth * peterHouseDepth * peterHouseHeight ;
 
-const housePricePeter = volumePeter * 2.5 * 1000 + gardenPeter * 300;
+const peterHousePrice = peterHouseVolume * 2.5 * 1000 + peterGardenSizeInM2 * 300;
 
-if ( pricePeter > housePricePeter )
+if ( peterHouseCosts > peterHousePrice )
     {
     console.log ("Peter is paying too much");
 } 
-else if (pricePeter < housePricePeter) {
+else if (peterHouseCosts < peterHousePrice) {
     console.log ("Peter is paying too little");
 }
 
 
 //PriceJulia
 
-const widthJulia = 5;
-const depthJulia = 11;
-const heightJulia = 8;
-const gardenJulia = 70;
-const priceJulia = 1000000;
+const juliaHouseWidth = 5;
+const juliaHouseDepth = 11;
+const juliaHouseHeight = 8;
+const juliaGardenSizeInM2 = 70;
+const juliaHouseCosts = 1000000;
 
-const volumeJulia = widthJulia * depthJulia * heightJulia;
-const housepriceJulia = volumeJulia * 2.5 * 1000 + gardenJulia * 300;
+const juliaHouseVolume = juliaHouseWidth * juliaHouseDepth * juliaHouseHeight;
+const juliaHousePrice = juliaHouseVolume * 2.5 * 1000 + juliaGardenSizeInM2 * 300;
 
-if ( priceJulia > housepriceJulia ) {
+if ( juliaHouseCosts > juliaHousePrice ) {
     console.log("Julia is paying too much");   
 } 
-else if ( priceJulia < housepriceJulia ) {
+else if ( juliaHouseCosts < juliaHousePrice ) {
     console.log("Julia is paying too little");
 }
 
