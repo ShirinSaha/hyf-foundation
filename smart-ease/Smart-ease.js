@@ -89,8 +89,9 @@ const secondWords = [
 ]
 
 const randomNumber = Math.floor(Math.random() * 10);
+const secondRandomNumber = Math.floor(Math.random() * 10);
 
-const startupName = firstWords[randomNumber] + " " + secondWords[randomNumber];
+const startupName = firstWords[randomNumber] + " " + secondWords[secondRandomNumber];
 
 
 
