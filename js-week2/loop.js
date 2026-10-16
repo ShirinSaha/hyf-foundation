@@ -39,6 +39,23 @@ sum = sum + i;
 console.log("sumTo4 "+ sumTo(4));
 
 function makeLine(n) {
-  let makeLine = 0;
-  for ( let i)
+  let line = "";
+  for ( let i = 0; i < n; i++ ) {
+    line += "*";
+  }
+
+  return line ;
 }
+
+console.log(makeLine(5));
+
+function countdown(n) {
+   let result = "";
+  for ( let i = n; i >= 1; i-- ) {
+    result += i + " ";
+  }
+
+  return result;
+}
+
+console.log(countdown(3));

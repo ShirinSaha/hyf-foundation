@@ -15,22 +15,22 @@ console.log (fullName2);
 
 //Formal fullname
 
-function getFullName(firstName, surname, title = "") {
+function getFullName(firstName, surname, useFormalName = false) {
   if (!firstName || !surname) {
     return "Please provide both first name and surname";
   }
 
   const fullName = firstName + " " + surname;
 
-  if (title) {
-    return title + " " + fullName;
+  if (useFormalName) {
+    return "Lord " + fullName;
   }
 
   return fullName;
 }
 
-console.log(getFullName("Benjamin", "Hughes", "Lord"));
-console.log(getFullName ("Jane", "Hughes", "Lady"));
+console.log(getFullName("Benjamin", "Hughes", true));
+console.log(getFullName("Jane", "Hughes", false));
 console.log(getFullName("Alex", "Hughes"));
 
 
@@ -172,7 +172,9 @@ addStudentToClass("Noah");
 addStudentToClass("Lucas");
 
 addStudentToClass("Benjamin");
+addStudentToClass("");
 
+addStudentToClass("Queen Margrethe");
 addStudentToClass("Queen Margrethe");
 
 console.log(getNumberOfStudents()); 

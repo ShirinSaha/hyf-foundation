@@ -117,6 +117,7 @@ console.log(getBalanceMessage(99999));
 //F5 — Shop checkou
 function getVat(price) {
     return price * .25;
+}
 
 function getPriceWithVat(price) {
  return price + getVat(price);
