@@ -14,8 +14,7 @@ console.log(notes);
 //Get a note by ID
 function getNote(id) {
   if (typeof id !== "number") {
-    console.log("Error: Please provide a valid number ID");
-    return;
+    return "Error: Please provide a valid number for ID";
   }
 
   for (let i = 0; i <notes.length; i++) {
