@@ -29,8 +29,7 @@ function getNote(id) {
   console.log("Error: Note not found");
 }
 
-const firstNote = getNote(1);
-console.log(firstNote);
+console.log(getNote(1));
 
 // Log out all notes in a readable format
 
