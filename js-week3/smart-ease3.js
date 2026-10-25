@@ -73,7 +73,7 @@ console.log(activities);
 //Show usage status
 
 function showStatus(activities) {
-  if (activities.length === 0) {
+  if (!activities.length) {
     console.log("Add some activities before calling showStatus");
     return;
   }
