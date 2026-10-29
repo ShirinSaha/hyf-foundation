@@ -3,9 +3,7 @@
 const notes = [];
 
 function saveNote(content, id){
-  notes.push({
-    content: content,
-    id: id});
+  notes.push({content, id});
 }
 
 saveNote("Pick up groceries", 1);
@@ -16,8 +14,7 @@ console.log(notes);
 //Get a note by ID
 function getNote(id) {
   if (typeof id !== "number") {
-    console.log("Error: Please provide a valid number ID");
-    return;
+    return "Error: Please provide a valid number for ID";
   }
 
   for (let i = 0; i <notes.length; i++) {
@@ -29,8 +26,7 @@ function getNote(id) {
   console.log("Error: Note not found");
 }
 
-const firstNote = getNote(1);
-console.log(firstNote);
+console.log(getNote(1));
 
 // Log out all notes in a readable format
 
@@ -65,11 +61,7 @@ let activities = [];
 
 function addActivity(date, activity, duration) {
 
-  activities.push({
-    date: date,
-    activity: activity,
-    duration: duration 
-  });
+  activities.push({date, activity, duration});
 }
 
 addActivity("23/7-18", "Youtube", 30);
@@ -81,7 +73,7 @@ console.log(activities);
 //Show usage status
 
 function showStatus(activities) {
-  if (activities.length === 0) {
+  if (!activities.length) {
     console.log("Add some activities before calling showStatus");
     return;
   }
