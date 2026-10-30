@@ -47,6 +47,7 @@ function highAndLow(strNums){
       continue;
     }
     
+    
     if( Number(temp) > highest){
       highest = Number(temp);
     } else if ( Number(temp) < lowest){ 

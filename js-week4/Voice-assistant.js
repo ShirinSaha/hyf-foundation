@@ -19,6 +19,7 @@ function getReply(command){
                 break;
             }    
         }
+        
 
         let respond = "nice to meet you " + username;
         return respond;
