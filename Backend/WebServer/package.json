@@ -1,0 +1,10 @@
+{
+  "name": "webserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {},
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
