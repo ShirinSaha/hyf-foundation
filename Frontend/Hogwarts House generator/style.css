@@ -1,0 +1,78 @@
+
+/*New feature: Beautiful design */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #1b1535;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+
+  text-align: center;
+  background: #302653;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #8b5cf6;
+}
+
+h1 {
+  color: #f5d76e;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 20px 0;
+
+  border: 2px solid #f5d76e;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 8px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #f5d76e;
+  color: #1b1535;
+
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffe99a;
+  transform: scale(1.05);
+}
+
+#result {
+  margin-top: 25px;
+  color: #f5d76e;
+}
+
+#description {
+  font-style: italic;
+  line-height: 1.5;
+}
+
+[hidden] {
+  display: none;
+}
